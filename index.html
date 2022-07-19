@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Love Potion</title>
+    <link rel="icon" href="./img/logo.png" />
+  </head>
+  <script>
+    var loader = function () {
+      setTimeout(function () {
+        $("#loader").css({ opacity: 0, visibility: "hidden" });
+      }, 2000);
+    };
+
+    window.onload = function () {
+      loader();
+    };
+    function Time() {
+      document.getElementById("loader").style.display = "none ";
+    }
+    setTimeout(Time, 8000);
+  </script>
+
+  <body>
+    <div id="loader">
+      <img width="30%" class="img_rotate" src="./img/logo.png" />
+    </div>
+    <div class="risk">
+      <h1 class="text" style="font-weight: 700; text-align: center">
+        Web hiện đang không hỗ trợ trên điện thoại hãy chuyển sang máy tính để
+        trải nghiệm
+      </h1>
+      <img width="70%" class="img" src="./img/logo.png" />
+    </div>
+    <div class="full_screen">
+      <div class="all">
+        <div class="box_logo">
+          <img class="logo_background" src="./img/IMG_0862.JPG" />
+        </div>
+        <h2 class="question">
+          Bạn muốn đóng vai thành nhân vật nào trong game?
+        </h2>
+        <div class="choose">
+          <div
+            class="box_button"
+            onclick="Click()"
+            style="
+              cursor: url(https://cur.cursors-4u.net/games/gam-9/gam858.ani),
+                url(https://cur.cursors-4u.net/games/gam-9/gam858.png), auto !important;
+            "
+          >
+            <h1>Girl</h1>
+          </div>
+          <div
+            class="box_button"
+            onclick="Click1()"
+            style="
+              cursor: url(https://cur.cursors-4u.net/games/gam-9/gam858.ani),
+                url(https://cur.cursors-4u.net/games/gam-9/gam858.png), auto !important;
+            "
+          >
+            <h1>Boy</h1>
+          </div>
+        </div>
+        <div class="rule_box">
+          <h1 class="rule_text">How to play:</h1>
+          <div>
+            <h3 class="rule_text_small">
+              -Sử dụng máy tính để truy cập game qua đường link đã được cung
+              cấp. Nhấn Command ⌘ + F (trên Mac) hoặc F10/Fn + F10 (trên
+              Windows) để chơi ở chế độ toàn màn hình.
+            </h3>
+            <h3 class="rule_text_small">
+              -Sau khi truy cập game, bạn hãy nhấn START và điền ID đã được cung
+              cấp để bắt đầu game.
+            </h3>
+            <h3 class="rule_text_small">
+              -Sau khi điền ID, hãy đặt tên cho nhân vật của mình và đối phương.
+            </h3>
+            <h3 class="rule_text_small">
+              -Bạn sẽ nhập vai vào một học sinh cấp 3 và trải qua những tình
+              huống khác nhau tại trường học. Nhấn SPACE/ENTER để chơi game và
+              nhấn phím S để tua nhanh phần chạy chữ.
+            </h3>
+            <h3 class="rule_text_small">
+              -Hãy xem xét kỹ tình huống và lựa chọn câu trả lời của bạn. Khi
+              chọn đáp án, dùng mũi tên ↑ ↓ ← → để di chuyển tới câu trả lời bạn
+              muốn chọn, lựa chọn sẽ ở ô sáng hơn. Nhấn ENTER để chọn.
+            </h3>
+            <h3 class="rule_text_small">
+              -Sau khi hoàn thành việc chơi game, hãy đợi email thông báo kết
+              quả ghép đôi và thông tin về nền tảng Gather Town từ chúng mình
+              nhé!
+            </h3>
+          </div>
+        </div>
+      </div>
+      <h1 class="credits_text">Credits</h1>
+      <h1 class="credits_text1">A product by Triott da Project</h1>
+      <div class="non_responsive">
+        <div class="all_credits">
+          <div class="credits_box">
+            <div class="credits_box1">
+              <div class="box_team">
+                <h3 class="main" style="text-align: center">Game Scenario</h3>
+                <div style="text-align: center">
+                  <p>Lead by</p>
+                  <p>Diệu Anh</p>
+                  <p>-</p>
+                  <p>Hà Bình</p>
+                  <p>Khánh Linh</p>
+                  <p>Ngọc Linh</p>
+                  <p>Thảo Nguyên</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">Game</h3>
+                  <h3 class="main">Programmer</h3>
+                </div>
+                <div style="text-align: center">
+                  <p>Đức Minh</p>
+                  <p>Tuấn Nghĩa</p>
+                  <p>Trọng Khôi</p>
+                  <p>Lê Minh</p>
+                  <p>Đăng Khôi</p>
+                  <p>Gia Bình</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">UI Artist/</h3>
+                  <h3 class="main">Graphics</h3>
+                </div>
+                <div style="text-align: center">
+                  <p>Lead by</p>
+                  <p>Công phương</p>
+                  <p>-</p>
+                  <p>Vĩnh Hà</p>
+                  <p>Bảo Anh</p>
+                  <p>Hà Anh</p>
+                  <p>Lê My</p>
+                  <p>Bảo Hà</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">UX Designer</h3>
+                  <p>Công phương</p>
+                </div>
+                <div style="text-align: center">
+                  <h3 class="main">DB Manager</h3>
+                  <p>Trọng Khôi</p>
+                </div>
+                <div style="text-align: center">
+                  <h3 class="main">Web Programmer</h3>
+                  <p>Trọng Khôi</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">Web Designer</h3>
+                  <p>Bảo Hà</p>
+                </div>
+                <div style="text-align: center">
+                  <h3 class="main">Mentor</h3>
+                  <p>Phan Anh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="all_credits">
+          <div class="credits_box">
+            <div class="credits_box1">
+              <div class="box_team">
+                <h3 class="main" style="text-align: center">Game Scenario</h3>
+                <div style="text-align: center">
+                  <p>Lead by</p>
+                  <p>Diệu Anh</p>
+                  <p>-</p>
+                  <p>Hà Bình</p>
+                  <p>Khánh Linh</p>
+                  <p>Ngọc Linh</p>
+                  <p>Thảo Nguyên</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">Game</h3>
+                  <h3 class="main">Programmer</h3>
+                </div>
+                <div style="text-align: center">
+                  <p>Đức Minh</p>
+                  <p>Tuấn Nghĩa</p>
+                  <p>Trọng Khôi</p>
+                  <p>Lê Minh</p>
+                  <p>Đăng Khôi</p>
+                  <p>Gia Bình</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">UI Artist/</h3>
+                  <h3 class="main">Graphics</h3>
+                </div>
+                <div style="text-align: center">
+                  <p>Lead by</p>
+                  <p>Công phương</p>
+                  <p>-</p>
+                  <p>Vĩnh Hà</p>
+                  <p>Bảo Anh</p>
+                  <p>Hà Anh</p>
+                  <p>Lê My</p>
+                  <p>Bảo Hà</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">UX Designer</h3>
+                  <p>Công phương</p>
+                </div>
+                <div style="text-align: center">
+                  <h3 class="main">DB Manager</h3>
+                  <p>Trọng Khôi</p>
+                </div>
+                <div style="text-align: center">
+                  <h3 class="main">Web Programmer</h3>
+                  <p>Trọng Khôi</p>
+                </div>
+              </div>
+              <div class="box_team">
+                <div style="text-align: center">
+                  <h3 class="main">Web Designer</h3>
+                  <p>Bảo Hà</p>
+                </div>
+                <div style="text-align: center">
+                  <h3 class="main">Mentor</h3>
+                  <p>Phan Anh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 20px;
+          padding-bottom: 40px;
+        "
+      >
+        <img
+          style="border-radius: 20px"
+          width="13%"
+          src="./img/triott logo.jpg"
+        />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
